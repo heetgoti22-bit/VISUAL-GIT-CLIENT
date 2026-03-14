@@ -1,0 +1,17 @@
+{
+  "name": "visual-git-client",
+  "version": "1.0.0",
+  "description": "A browser-based visual Git client with interactive commit graphs, diff viewer, and branch visualization",
+  "private": true,
+  "scripts": {
+    "install:client": "cd client && npm install",
+    "install:server": "cd server && npm install",
+    "postinstall": "npm run install:client && npm run install:server",
+    "build": "cd client && npm run build",
+    "start": "cd server && node server.js",
+    "dev": "concurrently \"cd server && npm run dev\" \"cd client && npm run dev\""
+  },
+  "keywords": ["git", "github", "visualization", "react", "d3", "commit-graph"],
+  "author": "",
+  "license": "MIT"
+}
